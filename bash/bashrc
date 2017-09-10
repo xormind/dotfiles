@@ -1,0 +1,30 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# control over the history of commands
+HISTCONTROL=ignoredups
+
+# custom prompt so the git branche will more clear.
+source ~/.bin/git-prompt.sh
+PS1='[\u@\h \W]$(__git_ps1)\$ '
+
+# Simple markdown viewer from the command line
+source ~/.bin/read_markdown
+
+# gpg agent
+GPG_TTY=$(tty)
+export GPG_TTY
+export EDITOR='vim'
+
+alias xp='xprop | grep "WM_WINDOW_ROLE\|WM_CLASS" && echo "WM_CLASS(STRING) = \"NAME\", \"CLASS\""'

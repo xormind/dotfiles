@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#add=`ip -4  addr show dev wlo1 | grep inet | awk '{print $2}'`
+#
+#echo $add
+
+echo "`ip -o -4 addr list wlo1 | awk '{print $4}'| cut -d/ -f1`"
+
+

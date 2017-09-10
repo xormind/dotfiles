@@ -1,0 +1,34 @@
+# Some useful aliases
+alias ls='ls --color=auto'
+alias ll='ls -hl --color'
+alias la='ls -A --color'
+alias l='ls -CF --color'
+alias a='acpi'
+alias vi='vim'
+alias grep='grep --color'
+alias pacman='pacman --color always'
+alias qrencode='qrencode -t ANSIUTF8'
+alias gpg='gpg2'
+
+alias off='sudo systemctl poweroff'
+alias reboot='suod systemctl reboot'
+alias wifi='sudo wifi-menu'
+alias tlcl='mupdf ~/Documents/cli/TLCL-16.07.pdf &'
+#alias vim='nvim'
+alias rm='rm -iv'
+alias agenda='vim ~/Documents/divers/agenda.md'
+alias pdf='mupdf'
+alias reboot='sudo systemctl reboot'
+
+alias rc="vim ~/.bashrc && source ~/.bashrc"
+alias cls='clear'
+
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+
+alias how='mupdf ~/Documents/cli/How\ Linux\ Works\ -\ What\ Every\ Superuser\ Should\ Know,\ Brian\ Ward,\ 2014.pdf &'
+
+#alias mount='sudo mount -o rw,umask=0022,gid=1000,uid=1000'
+
+alias vi='vim'
+alias music='cmus'

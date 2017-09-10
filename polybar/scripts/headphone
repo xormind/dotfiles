@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+
+if [ `pacmd list-sinks | awk '/analog-output-headphones/{print $10}'` = 'no)' ]
+then
+    echo ''
+else
+    echo '   '
+fi

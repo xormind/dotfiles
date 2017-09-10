@@ -1,0 +1,61 @@
+! Windown Opacity
+rofi.opacity: 85
+
+! Window Width
+rofi.width: 100
+
+! Padding
+rofi.padding: 400
+
+! Font to use
+rofi.font: System San Francisco Display 17
+
+! Number of lines
+rofi.lines: 3
+
+! Number of columns
+rofi.columns: 1
+
+! Location on screen
+rofi.location: 0
+
+! Border width
+rofi.bw: 1
+
+! Separator style (none, dash, solid)
+rofi.separator-style: none
+
+! Margin between rows
+rofi.line-margin: 2
+
+! Row height (in chars)
+rofi.eh: 1
+
+! Hide the scrollbar
+rofi.hide-scrollbar: true
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+
+! bg:background
+! fg:foreground
+! bgalt: background alt
+! hlbg: hightlight background
+! hlfg: hightlight forground
+
+! Color scheme window 'background',                'border',      'separator'
+rofi.color-window:    argb:cc333333  #2f343f,      #2f343f,      argb:0000000
+
+                   bg              fg       bgalt         hlbg           hlfg
+! Color scheme for normal row
+rofi.color-normal: argb:02f343f,   #d3dae3, argb:0eee8d5, argb:0586e75, argb:fed3dae3
+
+! Color scheme for active row
+rofi.color-active: argb:0fdf6e3,   #636665, argb:0eee8d5, argb:0268bd2, #fdf6e3
+
+!color scheme for urgent row
+rofi.color-urgent: argb:0525560,   #d3dae3, argb:0eee8d5, argb:0ac852a, #872411
+
+! Disable history in run/ssh
+rofi.disable-history: false

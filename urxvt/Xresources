@@ -1,0 +1,72 @@
+! Grubbox theme
+! Source: https://github.com/morhetz/gruvbox-generalized
+
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+! desable scroll within less and related programs
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+! hard contrast: *background: #1d2021 
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
+
+! Deactivate scrollbar
+URxvt.scrollBar: false
+
+! Select the fonts to be used. This is a comma separated list of font names that are checked in order when trying to find glyphs for characters
+!urxvt*font:                             xft:ubuntumono-r:size=12:antialias=true:hinting=true
+!urxvt*italicfont:                       xft:ubuntumono-ri:size=12:italic:antialias=true:hinting=true
+!urxvt*boldfont:                         xft:ubuntumono-b:size=12:bold:antialias=true:hinting=true
+!URxvt*boldItalicFont: 			        xft:UbuntuMono-BI:size=12:bold:italic:antialias=true:hinting=true
+
+urxvt*font:                             xft:DejaVu Sans Mono for Powerline:size=12:antialias=true:hinting=true
+urxvt*italicfont:                       xft:DejaVu Sans Mono for Oblique Powerline:size=12:italic:antialias=true:hinting=true
+urxvt*boldfont:                         xft:DejaVu Sans Mono Bold for Powerline:size=10:bold:antialias=true:hinting=true
+URxvt*boldItalicFont: 			        xft:DejaVu Sans Mono for Bold Oblique Powerline:size=10:bold:italic:antialias=true:hinting=true
+
+!urxvt*font:                             xft:Pragmata Pro Mono Regular:size=12:antialias=true:hinting=true
+!urxvt*italicfont:                       xft:Pragmata Pro Mono Italic:size=12:italic:antialias=true:hinting=true
+!urxvt*boldfont:                         xft:Pragmata Pro Mono Bold:size=10:bold:antialias=true:hinting=true
+!URxvt*boldItalicFont: 			        xft:Pragmata Pro Mono Bold Italic:size=10:bold:italic:antialias=true:hinting=true
+
+
+! adjust the spacing 
+URxvt.letterSpace: -1
+
+! clickable urls
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1

@@ -1,0 +1,35 @@
+#!/usr/bin/bash
+# simple backup and restore backup script
+
+# N.B: Used by the root
+
+startBackup(){
+    echo "Backing files."
+    #            <Source>                             <Destination>
+    rsync --delete -aHXv /home/samir/                /mnt/backup/home/
+    rsync -aHXv /home/store/                         /mnt/backup/store/
+    rsync --delete -aHXv /etc/                       /mnt/backup/etc/
+    # rsync --delete -aHXv /home/vm-images/            /mnt/backup/vm-images/
+
+    # Testing
+    # rsync --delete -aHXv /home/samir/tmp/etc/        /tmp/test/
+}
+
+
+restoreBackup(){
+    echo "Restoring files."
+    # Uncomment the directories you want to restore.
+    #            <Source>                             <Destination>
+    # rsync -aHXv /mnt/backup/home/                       /home/samir/
+    # rsync -aHXv /mnt/backup/vm-images/                  /home/vm-images/
+    # rsync -aHXv /mnt/backup/etc/                        /etc/
+
+    # rsync -aHXv /tmp/test/                      /tmp/restored/
+}
+
+
+
+# For restoring a single file. Just copy that command and restore that
+# particular file.
+
+# N.B. Pay close attention the last back-slash (/). Don't omit it. Always write it.

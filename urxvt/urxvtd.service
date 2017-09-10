@@ -1,0 +1,13 @@
+# copy this file to /etc/systemd/system then run
+# systemctl enable urxvtd.service
+
+[Unit]
+Description=RXVT-Unicode Daemon
+
+[Service]
+User=samir
+ExecStart=/usr/bin/urxvtd -q -o
+
+[Install]
+WantedBy=multi-user.target
+

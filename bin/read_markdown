@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+md(){
+    markdown $1 | lynx -stdin
+}

@@ -1,0 +1,27 @@
+#!/bin/sh
+# simple script to more firefox profiles folder to the RAM.
+
+static=main
+link=0zwxx6og.default
+volatile=/dev/shm/firefox-$USER
+
+IFS=
+set -efu
+
+cd ~/.mozilla/firefox
+
+if [ ! -r $volatile ]; then
+	mkdir -m0700 $volatile
+fi
+
+if [ "$(readlink $link)" != "$volatile" ]; then
+	mv $link $static
+	ln -s $volatile $link
+fi
+
+if [ -e $link/.unpacked ]; then
+	rsync -av --delete --exclude .unpacked ./$link/ ./$static/
+else
+	rsync -av ./$static/ ./$link/
+	touch $link/.unpacked
+fi

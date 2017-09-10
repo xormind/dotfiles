@@ -1,0 +1,18 @@
+set editing-mode vi
+
+$if mode=vi
+
+# Set up a Ctrl+l key-bind for vi's insert mode
+
+set keymap vi insert
+
+    Control-l: clear-screen
+
+# Set up a Ctrl+l key-bind for command mode
+# Not: This key-bind is already defined in vi mode
+
+set keymap vi command
+
+    Control-l: clear-screen
+
+$endif
